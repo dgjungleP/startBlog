@@ -1,0 +1,17 @@
+<div nz-row class="header">
+  <div nz-col nzSpan="18" class="top-left">
+    <nz-carousel nzAutoPlay>
+      <div nz-carousel-content *ngFor="let index of [1, 2, 3, 4]">
+        <h3>{{ index }}</h3>
+      </div>
+    </nz-carousel>
+  </div>
+  <div nz-col nzSpan="6" class="top-right">
+    <div>top</div>
+    <div>button</div>
+  </div>
+</div>
+<div nz-row class="content">
+  <div nz-col nzSpan="18" class="top-left"></div>
+  <div nz-col nzSpan="6" class="top-right"></div>
+</div>

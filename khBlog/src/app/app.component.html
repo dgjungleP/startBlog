@@ -1,1 +1,32 @@
-Hello
+<nz-layout>
+  <nz-header>
+    <div nz-row>
+      <div class="title" nz-col nzSpan="6">KhBlog</div>
+      <div nz-col nzSpan="12">
+        <span class="header">首页</span>
+        <span class="header">关于我</span>
+        <span class="header">标签</span>
+        <span class="header">分类</span>
+        <span class="header">归档</span>
+        <span class="header">专题</span>
+        <span class="header">留言板</span>
+      </div>
+      <div nz-row nzSpan="6">
+        <div nz-col>
+          <nz-input-group [nzSuffix]="suffixIconSearch">
+            <input type="text" nz-input placeholder="input search text" />
+          </nz-input-group>
+          <ng-template #suffixIconSearch>
+            <i nz-icon nzType="search"></i>
+          </ng-template>
+        </div>
+
+        <div nz-col>
+          <nz-avatar nzText="KH" style="background-color: #87d068"> </nz-avatar>
+        </div>
+      </div>
+    </div>
+  </nz-header>
+  <nz-content><router-outlet></router-outlet> </nz-content>
+  <nz-footer>Footer</nz-footer>
+</nz-layout>
