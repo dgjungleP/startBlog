@@ -18,6 +18,7 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzAvatarModule } from 'ng-zorro-antd/avatar';
 import { NzCarouselModule } from 'ng-zorro-antd/carousel';
+import { NzCardModule } from 'ng-zorro-antd/card';
 registerLocaleData(zh);
 
 const NG_MODULE = [
@@ -28,6 +29,7 @@ const NG_MODULE = [
   NzIconModule,
   NzAvatarModule,
   NzCarouselModule,
+  NzCardModule,
 ];
 @NgModule({
   declarations: [AppComponent, HomeComponent],

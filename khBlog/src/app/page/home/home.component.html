@@ -2,16 +2,58 @@
   <div nz-col nzSpan="18" class="top-left">
     <nz-carousel nzAutoPlay>
       <div nz-carousel-content *ngFor="let index of [1, 2, 3, 4]">
-        <h3>{{ index }}</h3>
+        <img
+          [src]="'assets/img/' + index + '.jpg'"
+          style="width: 90%; height: 90%; margin-left: 5%"
+        />
       </div>
     </nz-carousel>
   </div>
   <div nz-col nzSpan="6" class="top-right">
-    <div>top</div>
-    <div>button</div>
+    <div nz-row>
+      <nz-card
+        style="width: 300px"
+        [nzBordered]="false"
+        nzTitle="新闻"
+        [nzExtra]="extraTemplate"
+      >
+        <p>这里是康辉</p>
+      </nz-card>
+    </div>
+    <div nz-row>
+      <nz-card
+        style="width: 300px; margin-top: 25%"
+        [nzBordered]="false"
+        nzTitle="广告"
+        [nzExtra]="extraTemplate"
+      >
+        <p>这里是康康</p>
+      </nz-card>
+    </div>
+    <ng-template #extraTemplate>
+      <a>More</a>
+    </ng-template>
   </div>
 </div>
 <div nz-row class="content">
-  <div nz-col nzSpan="18" class="top-left"></div>
-  <div nz-col nzSpan="6" class="top-right"></div>
+  <div nz-col nzSpan="18" class="top-left">
+    <div *ngFor="let index of [1, 2, 3, 4]">
+      <nz-card nz-col style="width: 90%; left: 5%; margin-top: 20px">
+        <nz-card-meta
+          nzTitle="Card title"
+          nzDescription="This is the description"
+        ></nz-card-meta>
+      </nz-card>
+    </div>
+  </div>
+  <div nz-col nzSpan="6" class="top-right">
+    <div *ngFor="let index of [1, 2, 3, 4, 5, 6]">
+      <nz-card nz-col style="width: 90%; left: 5%; margin-top: 20px">
+        <nz-card-meta
+          nzTitle="Card title"
+          nzDescription="This is the description"
+        ></nz-card-meta>
+      </nz-card>
+    </div>
+  </div>
 </div>
