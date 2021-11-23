@@ -47,11 +47,11 @@
     </div>
   </div>
   <div nz-col nzSpan="6" class="top-right">
-    <div *ngFor="let index of [1, 2, 3, 4, 5, 6]">
+    <div *ngFor="let index of articleList">
       <nz-card nz-col style="width: 90%; left: 5%; margin-top: 20px">
         <nz-card-meta
-          nzTitle="Card title"
-          nzDescription="This is the description"
+          [nzTitle]="index.Name"
+          [nzDescription]="index.Title"
         ></nz-card-meta>
       </nz-card>
     </div>
